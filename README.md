@@ -4,12 +4,6 @@ Cyclops is a minimalist sticky-note desktop utility built with PyQt6. Every
 note floats above other windows so quick reminders stay close at hand without
 reaching for a browser or heavyweight productivity suite.
 
-![Cyclops sticky notes screenshot](docs/screenshot.png "Cyclops notes")
-
-> **Note**: The screenshot reference is optional—remove the image line or drop a
-> PNG at `docs/screenshot.png` before publishing to keep the badge above from
-> breaking.
-
 ## Features
 
 - **Always-on-top stickies** – frameless windows you can drag and resize freely.
@@ -72,5 +66,4 @@ pyinstaller Cyclops.spec
 
 ## License
 
-TBD
-
+🌀 MIT License © 2025 Gianni Perez — see [LICENSE](LICENSE) for details.
