@@ -230,7 +230,7 @@ class Sticky(QWidget):
         self.setStyleSheet(
             "QWidget {"
             f"  background:{self.bg.name()};"
-            "  border:1px solid #7a7a7a; border-radius:8px;"
+            "  border:1px solid rgba(0,0,0,0.55); border-radius:8px;"
             "}"
         )
         self.editor.setStyleSheet("background:transparent; border:none; color:black;")
