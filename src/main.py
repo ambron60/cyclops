@@ -53,7 +53,7 @@ _ensure_save_dir()
 
 DEFAULT_BG = QColor("#FFF79A")   # post-it yellow
 HEADER_H = 30
-FONT = QFont("Arial", 23)        # always black text
+FONT = QFont("Arial", 18)        # always black text
 
 def clamp(v, lo, hi): return max(lo, min(hi, v))
 
@@ -194,8 +194,8 @@ class Sticky(QWidget):
 
         # Geometry / content
         if initial:
-            w = max(160, int(initial.get("w", 300)))
-            hgt = max(160, int(initial.get("h", 300)))
+            w = max(128, int(initial.get("w", 300)))
+            hgt = max(128, int(initial.get("h", 300)))
             self.resize(w, hgt)
             self.move(int(initial.get("x", 140)), int(initial.get("y", 140)))
             self.editor.setPlainText(initial.get("text", ""))
@@ -203,7 +203,7 @@ class Sticky(QWidget):
             self.opacity = clamp(float(initial.get("opacity", 1.0)), 0.1, 1.0)
             self.slider.setValue(int(round(self.opacity * 100)))
         else:
-            self.resize(320, 320)
+            self.resize(256, 256)
             self.move(140 + random.randint(-120, 120), 140 + random.randint(-120, 120))
             self.opacity = 1.0
             self.slider.setValue(100)
