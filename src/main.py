@@ -53,7 +53,7 @@ _ensure_save_dir()
 
 DEFAULT_BG = QColor("#FFF79A")   # post-it yellow
 HEADER_H = 30
-FONT = QFont("Arial", 18)        # always black text
+FONT = QFont("Arial", 15)        # always black text
 
 def clamp(v, lo, hi): return max(lo, min(hi, v))
 
